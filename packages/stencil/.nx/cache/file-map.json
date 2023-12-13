@@ -1,0 +1,112 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.1",
+  "deps": {
+    "@stencil/angular-output-target": "^0.8.3",
+    "@stencil/core": "^4.7.0",
+    "@types/jest": "^29.5.6",
+    "@types/node": "^16.18.11",
+    "jest": "^29.7.0",
+    "jest-cli": "^29.7.0",
+    "puppeteer": "21.1.1"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "10872272122097428313"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "341628938604786727"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "12737016400485026768"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "15740263691796715364"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "998989354582897897"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "5681500157280487515"
+      },
+      {
+        "file": ".prettierrc.json",
+        "hash": "12468947791480438124"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "16469975179465296534"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2374357485523684807"
+      },
+      {
+        "file": "package.json",
+        "hash": "6027617396655439122"
+      },
+      {
+        "file": "readme.md",
+        "hash": "16293018890638759950"
+      },
+      {
+        "file": "src/components.d.ts",
+        "hash": "4461706131197047480"
+      },
+      {
+        "file": "src/components/my-component/my-component.css",
+        "hash": "13027103444035360129"
+      },
+      {
+        "file": "src/components/my-component/my-component.e2e.ts",
+        "hash": "9663520868158654038"
+      },
+      {
+        "file": "src/components/my-component/my-component.spec.ts",
+        "hash": "1281587495833565775"
+      },
+      {
+        "file": "src/components/my-component/my-component.tsx",
+        "hash": "6393624916521745449"
+      },
+      {
+        "file": "src/components/my-component/readme.md",
+        "hash": "5710852443896956898"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "6249727071184185251"
+      },
+      {
+        "file": "src/index.ts",
+        "hash": "1595832445444187531"
+      },
+      {
+        "file": "src/utils/utils.spec.ts",
+        "hash": "13022197883372477777"
+      },
+      {
+        "file": "src/utils/utils.ts",
+        "hash": "346420373154306979"
+      },
+      {
+        "file": "stencil.config.ts",
+        "hash": "93079611705393195"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "9549721146382261228"
+      }
+    ]
+  }
+}
