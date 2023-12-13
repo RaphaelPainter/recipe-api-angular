@@ -5,6 +5,12 @@
     "paths": {
       "component-library": [
         "./dist/component-library"
+      ],
+      "component-library2": [
+        "./dist/component-library2"
+      ],
+      "component-library3": [
+        "./dist/component-library3"
       ]
     },
     "outDir": "./dist/out-tsc",

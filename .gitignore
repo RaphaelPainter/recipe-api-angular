@@ -1,1 +1,3 @@
 node_modules/
+*/stencil-generated/*
+recipe-front-angular/src/libs/stencil-generated/angular-component-lib/utils.ts

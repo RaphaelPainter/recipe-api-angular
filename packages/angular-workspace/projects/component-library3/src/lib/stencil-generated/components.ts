@@ -4,39 +4,17 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZo
 
 import { ProxyCmp } from './angular-component-lib/utils';
 
-import { Components } from 'recipe-stencil';
+import { Components } from 'stencil-library';
 
 
 @ProxyCmp({
-})
-@Component({
-  selector: 'my-card',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: '<ng-content></ng-content>',
-  // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: [],
-})
-export class MyCard {
-  protected el: HTMLElement;
-  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
-    c.detach();
-    this.el = r.nativeElement;
-  }
-}
-
-
-export declare interface MyCard extends Components.MyCard {}
-
-
-@ProxyCmp({
-  inputs: ['first', 'last', 'middle']
 })
 @Component({
   selector: 'my-component',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: '<ng-content></ng-content>',
   // eslint-disable-next-line @angular-eslint/no-inputs-metadata-property
-  inputs: ['first', 'last', 'middle'],
+  inputs: [],
 })
 export class MyComponent {
   protected el: HTMLElement;
