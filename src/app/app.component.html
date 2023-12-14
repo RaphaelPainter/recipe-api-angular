@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<nav>
+  <button class="btn btn-default" (click)="login()">
+    Login
+  </button>
+  <button class="btn btn-default" (click)="logoff()">
+    Logout
+  </button>
+</nav>
+<div class="product-list">
+  <acme-product-card *ngFor="let product of products" [attr.pid]="product.pid" [attr.badge]="product.badge"
+    [attr.name]="product.name" [attr.desc]="product.desc" [attr.image-src]="product.imageSrc"
+    [attr.price]="product.price" ></acme-product-card>
+</div>
+<router-outlet></router-outlet>
