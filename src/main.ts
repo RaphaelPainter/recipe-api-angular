@@ -6,6 +6,7 @@ import { defineCustomElements } from 'acme-components-sample-shirzooa';
 
 
 
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
