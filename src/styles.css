@@ -13,10 +13,13 @@ h2, h3 {
 h3 {
   font-size: 1.3rem;
 }
-body {
-  padding: .5rem;
-  max-width: 1000px;
-  margin: auto;
+:root {
+  background: white;
+  background-image: linear-gradient(90deg,
+      rgba(245, 211, 211, 0.5) 50%,
+      transparent 0),
+    linear-gradient(rgba(241, 202, 202, 0.5) 50%, transparent 0);
+  background-size: 30px 30px;
 }
 @media (min-width: 600px) {
   body {

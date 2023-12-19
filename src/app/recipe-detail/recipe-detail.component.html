@@ -1,0 +1,6 @@
+<!--<button (click)="reset()">Reset Counter</button>-->
+
+<recipe-detail
+  *ngIf="isDataAvailable"
+  [recipe]="recipe$ | async"
+></recipe-detail>

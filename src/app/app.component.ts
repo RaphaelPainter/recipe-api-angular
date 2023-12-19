@@ -4,7 +4,6 @@ import {
   NullValidationHandler,
   AuthConfig,
 } from 'angular-oauth2-oidc';
-import { PRODUCTS } from './mock-products';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +12,11 @@ import { PRODUCTS } from './mock-products';
 })
 export class AppComponent {
   title = 'Recipe app';
-  products = PRODUCTS;
+}
+
+/*
+export class AppComponent {
+  title = 'Recipe app';
   constructor(private oauthService: OAuthService) {
     this.configure();
   }
@@ -25,6 +28,7 @@ export class AppComponent {
     // at_hash is not present in JWT token
     disableAtHashCheck: true,
     showDebugInformation: true,
+    scope: 'openid',
   };
 
   public login() {
@@ -38,6 +42,19 @@ export class AppComponent {
   private configure() {
     this.oauthService.configure(this.authConfig);
     this.oauthService.tokenValidationHandler = new NullValidationHandler();
-    this.oauthService.loadDiscoveryDocumentAndTryLogin();
+    this.oauthService.loadDiscoveryDocumentAndLogin().then(() => {
+      if (!this.oauthService.hasValidAccessToken()) {
+        this.oauthService.initCodeFlow();
+      } else {
+        this.oauthService.loadUserProfile().then((userProfile) => {
+          console.log(JSON.stringify(userProfile));
+        });
+      }
+    });
   }
-}
+
+  get token() {
+    let claims: any = this.oauthService.getIdentityClaims();
+    return claims ? claims : null;
+  }
+}*/

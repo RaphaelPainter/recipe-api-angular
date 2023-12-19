@@ -1,6 +1,6 @@
-<ingredient-grid ingredients=ingredients$></ingredient-grid>
-
-
-<div>Current Ingredients: {{ ingredients$ | async }}</div>
+<ingredient-grid
+  *ngIf="isDataAvailable"
+  [ingredients]="ingredients$ | async"
+></ingredient-grid>
 
 <!--<button (click)="reset()">Reset Counter</button>-->
